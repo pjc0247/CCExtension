@@ -19,6 +19,26 @@ layer->addChild( obj1 );
 layer->addChild( obj2 );
 ```
 
+
+Menu
+====
+###CCReactButton
+CCReactButton은 클릭했을 때 지정된 액션을 수행한 후 callback을 부르는 버튼입니다.
+
+CCReactButton을 이용해 누르면 반응하는 버튼을 만들 수 있습니다.
+```C++
+CCReactButton *btn;
+btn = CCReactButton::create(
+    "normal.png", "clicked.png", "disalbed.png",
+    this, menu_selector(cb),
+    CCSequence::create(
+        CCScaleTo::create(0.3, 1.2,1.1),
+        CCScaleTo::create(0.3, 1.0,1.0),
+        NULL
+    ));
+```
+
+
 Action
 ====
 
