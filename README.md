@@ -62,3 +62,23 @@ obj->runAction(
         NULL
     ));
 ```
+
+
+###CCDelay
+CCDelay는 지정된 시간 이후에 액션을 실행시킵니다.
+
+CCSequence와 CCDelayTime을 조합하여 사용하는것보다 간결하게 코드를 작성할 수 있습니다.
+```C++
+obj->runAction(
+    CCSequence::create(
+        CCDelayTime::create(1),
+        CCDestroy::create(obj),
+        NULL
+    ));
+```
+
+```C++
+obj->runAction(
+    CCDelay::create( 1, CCDestroy::create(obj) )
+    );
+```
