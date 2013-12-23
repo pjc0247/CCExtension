@@ -1,7 +1,7 @@
 CCExtension
 ===========
 
-cocos2d-x의 쉬운 사용을 도와주는 유틸리티 모음입니다.
+CCExtension은 cocos2d-x의 쉬운 사용을 도와주는 각종 기능들의 모음입니다.
 
 
 Layer
