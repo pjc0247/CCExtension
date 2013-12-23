@@ -4,7 +4,7 @@ CCExtension
 cocos2d-x extension
 
 
-Utility
+Layer
 ====
 
 ###CCYSortedLayer
@@ -17,27 +17,6 @@ obj2->setPosition( ccp(0,140) );
 
 layer->addChild( obj1 );
 layer->addChild( obj2 );
-```
-
-###CCSync
-CCSync는 쓰레드간에 데이터 동기화를 도와주는 오브젝트입니다.
-
-```C++
-foo_thread(){
-    if( io() )
-        sync->throwObject( IO_OK, data );
-    else
-        sync->throwObject( IO_ERROR, data );
-}
-
-bar_thread(){
-    sync->catchObject( IO_OK, catchobject_selector {
-            printf("okok\n");
-        });
-    sync->catchObject( IO_ERROR, catchobject_selector {
-            printf("error\n");
-        });
-}
 ```
 
 Action
@@ -101,4 +80,27 @@ obj->runAction(
 obj->runAction(
     CCDelay::create( 1, CCDestroy::create(obj) )
     );
+```
+
+Multi-thread
+===
+###CCSync
+CCSync는 쓰레드간에 데이터 동기화를 도와주는 오브젝트입니다.
+
+```C++
+foo_thread(){
+    if( io() )
+        sync->throwObject( IO_OK, data );
+    else
+        sync->throwObject( IO_ERROR, data );
+}
+
+bar_thread(){
+    sync->catchObject( IO_OK, catchobject_selector {
+            printf("okok\n");
+        });
+    sync->catchObject( IO_ERROR, catchobject_selector {
+            printf("error\n");
+        });
+}
 ```
