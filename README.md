@@ -7,6 +7,11 @@ cocos2d-x extension
 Utility
 ====
 
+###CCYSortedLayer
+CCYSortedLayer는 Y축을 기준으로 z-order가 정렬되는 레이어입니다.
+```C++
+```
+
 Action
 ====
 
