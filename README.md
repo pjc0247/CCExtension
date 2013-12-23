@@ -35,3 +35,18 @@ obj->runAction(
         }
     }));
 ```
+
+
+
+###CCParallel
+CCParallel은 여러개의 액션들을 동시에 실행할 수 있도록 해줍니다.
+
+아래의 예제에서 CCFadeOut과 CCScaleTo는 동시에 실행됩니다.
+```C++
+obj->runAction(
+    CCParallel::create(
+        CCFadeOut::create(1),
+        CCScaleTo::create(1, 1.4),
+        NULL
+    ));
+```
