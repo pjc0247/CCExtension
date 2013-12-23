@@ -83,7 +83,7 @@ obj->runAction(
 ```
 
 Multi-thread
-===
+====
 ###CCSync
 CCSync는 쓰레드간에 데이터 동기화를 도와주는 오브젝트입니다.
 
@@ -103,4 +103,15 @@ bar_thread(){
             printf("error\n");
         });
 }
+```
+
+
+Network
+====
+
+###CCSpriteFromURL
+CCSpriteFromURL은 Http 프로토콜을 통해서 다운받은 이미지를 CCSprite로 로드합니다.
+
+```C++
+CCSprite *sprite = CCSpriteFromURL::create("http://www.asdf.com/logo.png");
 ```
