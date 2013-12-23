@@ -10,6 +10,13 @@ Utility
 ###CCYSortedLayer
 CCYSortedLayer는 Y축을 기준으로 z-order가 정렬되는 레이어입니다.
 ```C++
+layer = CCYSortedLayer::create();
+
+obj1->setPosition( ccp(0,100) );
+obj2->setPosition( ccp(0,140) );
+
+layer->addChild( obj1 );
+layer->addChild( obj2 );
 ```
 
 Action
