@@ -76,7 +76,6 @@ obj->runAction(
         NULL
     ));
 ```
-
 ```C++
 obj->runAction(
     CCDelay::create( 1, CCDestroy::create(obj) )
