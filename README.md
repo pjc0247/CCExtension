@@ -30,7 +30,7 @@ foo_thread(){
         sync->throwObject( IO_ERROR, data );
 }
 
-bar_thread() {
+bar_thread(){
     sync->catchObject( IO_OK, catchobject_selector {
             printf("okok\n");
         });
