@@ -2,3 +2,36 @@ CCExtension
 ===========
 
 cocos2d-x extension
+
+
+Utility
+====
+
+Action
+====
+
+###CCDestroy
+CCDestroy는 대상 오브젝트를 파괴하는 액션입니다.
+
+특정 액션 이후, 또는 지정된 시간 이후에 오브젝트를 파괴해야 할 때 이용할 수 있습니다.
+```C++
+obj->runAction(
+    CCSequence::create(
+        CCDelayTime::create( 1 ),
+        CCDestroy::create( obj ),
+        NULL
+    ));
+```
+
+
+
+###CCCallFuncL
+CCCallFuncL은 CCCallFunc액션을 lambda함수와 함께 사용할 수 있도록 해줍니다.
+```C++
+obj->runAction(
+    CCCallFuncL::create( callfuncL_selector{
+        for(int i=0;i<5;i++){
+            printf("hello world\n");
+        }
+    }));
+```
