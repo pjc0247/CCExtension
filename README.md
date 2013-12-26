@@ -4,6 +4,16 @@ CCExtension
 CCExtension은 cocos2d-x의 쉬운 사용을 도와주는 각종 기능들의 모음입니다.
 
 
+Image
+====
+
+###CCMosaic
+CCMosaic는 스프라이트에 모자이크 효과를 줄 수 있습니다.
+
+```C++
+after = CCMosaic::create( before, 0.05 );
+```
+
 Layer
 ====
 
