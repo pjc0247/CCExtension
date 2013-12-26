@@ -10,12 +10,12 @@ NS_CC_BEGIN
 
 typedef std::function<void()> SEL_CallFuncL;
 
-#define callfuncL_selector [=]()
+#define callfuncL_selector [=]
 
 /*
 	CCCallFuncL
 
-	lambdaÇÔ¼ö¸¦ Áö¿øÇÏ´Â CCCallFunc ¾×¼ÇÀÔ´Ï´Ù.
+	lambdaï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ CCCallFunc ï¿½×¼ï¿½ï¿½Ô´Ï´ï¿½.
 */
 class CCCallFuncL : public CCActionInstant //<NSCopying>
 {
