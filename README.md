@@ -9,6 +9,8 @@ Image
 
 ###CCMosaic
 CCMosaic는 스프라이트에 모자이크 효과를 줄 수 있습니다.
+
+
 ![Alt text](https://raw.github.com/pjc0247/CCExtension/master/img/mosaic.png) 
 ```C++
 after = CCMosaic::create( before, 0.05 );
