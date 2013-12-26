@@ -74,7 +74,7 @@ obj->runAction(
 CCCallFuncL은 CCCallFunc액션을 lambda함수와 함께 사용할 수 있도록 해줍니다.
 ```C++
 obj->runAction(
-    CCCallFuncL::create( callfuncL_selector{
+    CCCallFuncL::create( callfuncL_selector(){
         for(int i=0;i<5;i++){
             printf("hello world\n");
         }
