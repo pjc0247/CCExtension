@@ -17,6 +17,20 @@ CCMosaic는 스프라이트에 모자이크 효과를 줄 수 있습니다.
 after = CCMosaic::create( before, 0.05 );
 ```
 
+##CCBlend
+CCBlend은 ccBlendFunc프리셋들의 모음입니다.
+
+```
+지원하는 프리셋
+
+None, Blend,Add, Multiply, Screen, Linear Dodge
+```
+
+```C++
+sprite->setBlendFunc(
+    CCBlend::Multiply);
+```
+
 Layer
 ====
 
