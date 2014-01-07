@@ -131,6 +131,17 @@ obj->runAction(
 
 Multi-thread
 ====
+
+###CCMutex
+CCMutex는 뮤텍스 객체입니다.
+```C++
+CCMutex *mutex = CCMutex::create();
+
+mutex->lock();
+    // do work
+mutex->unlock();
+```
+
 ###CCSync
 CCSync는 쓰레드간에 데이터 동기화를 도와주는 오브젝트입니다.
 
