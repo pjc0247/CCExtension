@@ -46,6 +46,15 @@ layer->addChild( obj1 );
 layer->addChild( obj2 );
 ```
 
+###CCScroller
+CCScroller는 터치를 통해 내용을 스크롤 할 수 있는 레이어입니다.
+```C++
+CCScroller *scroller = CCScroller::create();
+
+scroller->addChild( sprite1 );
+scroller->addChild( sprite2 );
+```
+
 
 UserInterface
 ====
