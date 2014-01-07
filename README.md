@@ -205,7 +205,7 @@ Packaging
 ====
 
 ###CCPackage
-CCPackage는 여러 리소스 파일들을 하나로 합치고 개별적으로 로드할수 있도록 해줍니다.
+CCPackage는 여러 리소스 파일들을 하나로 합쳐서 하나의 파일로 만들고 개별적으로 로드할수 있도록 해줍니다.
 
 ```C++
 CCPackage *pack = CCPackage::create("res.pack");
