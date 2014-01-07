@@ -47,7 +47,7 @@ layer->addChild( obj2 );
 ```
 
 
-Menu
+UserInterface
 ====
 ###CCReactButton
 CCReactButton은 클릭했을 때 지정된 액션을 수행한 후 callback을 부르는 버튼입니다.
@@ -63,6 +63,11 @@ btn = CCReactButton::create(
         CCScaleTo::create(0.3, 1.0,1.0),
         NULL
     ));
+```
+
+###CCProgressBar
+```C++
+CCProgressBar *pg = CCProgressBar::create();
 ```
 
 
