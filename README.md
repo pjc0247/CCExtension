@@ -54,6 +54,17 @@ CCScroller *scroller =
 
 scroller->addItem( sprite1 );
 scroller->addItem( sprite2 );
+
+/*
+    apply 메소드를 사용하여 새로 추가된 아이템들을 반영하여 즉시 다시 그립니다.
+*/
+scroller->apply();
+
+/*
+    LiveUpdate를 true로 설정할 경우 매 프레임마다 아이템들이 다시 그려집니다.
+    아이템들이 동적으로 변화하는 경우에 true로 설정해야 합니다.
+*/
+scroller->enableLiveUpdate( true );
 ```
 
 
