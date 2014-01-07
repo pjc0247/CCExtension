@@ -213,3 +213,16 @@ CCPackage *pack = CCPackage::create("res.pack");
 printf("%s\n", pack->unpack("hello").data_ptr);
 CCTexture2D *tex = pack->unpackTexture("a.png");
 ```
+
+
+Memory
+====
+
+###CCMemory
+CCMemory는 CCObject로부터 상속받아 retain counter를 가지고 cocos2d의 autorelease pool에 등록할 수 있는 스마트 포인터입니다.
+
+```C++
+CCMemory *mem = CCMemory::create(1024);
+
+mem2 = mem->copy();
+```
