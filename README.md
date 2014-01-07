@@ -162,3 +162,17 @@ CCSpriteFromURL은 Http 프로토콜을 통해서 다운받은 이미지를 CCSp
 ```C++
 CCSprite *sprite = CCSpriteFromURL::create("http://www.asdf.com/logo.png");
 ```
+
+
+Packaging
+====
+
+###CCPackage
+CCPackage는 여러 리소스 파일들을 하나로 합치고 개별적으로 로드할수 있도록 해줍니다.
+
+```C++
+CCPackage *pack = CCPackage::create("res.pack");
+
+printf("%s\n", pack->unpack("hello").data_ptr);
+CCTexture2D *tex = pack->unpackTexture("a.png");
+```
