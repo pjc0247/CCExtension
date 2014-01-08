@@ -193,6 +193,21 @@ bar_thread(){
 Network
 ====
 
+###CCHttpClient
+CCHttpClient는 비동기로 동작하는 http 클라이언트입니다.
+
+```C++
+CCHttpClient *http = CCHttpClient::getInstance();
+
+http->requestGet(
+    "http://www.github.com",
+    ResponseHandler(int code,string &body){
+        printf("response : %d\n", code);
+        printf("%s\n", body.c_str());
+    });
+
+```
+
 ###CCSpriteFromURL
 CCSpriteFromURL은 Http 프로토콜을 통해서 다운받은 이미지를 CCSprite로 로드합니다.
 
