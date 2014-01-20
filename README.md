@@ -95,6 +95,18 @@ CCProgressBar *pg = CCProgressBar::create();
 Action
 ====
 
+###CCDynamicActionManager
+CCDynamicActionManager는 전역적으로 모든 액션들을 n배속으로 재생할 수 있도록 해주는 액션 매니져입니다.
+
+```C++
+CCDynamicActionManager *action_mgr = CCDynamicActionManager::create();
+director->setActionManager(action_mgr);
+```
+```C++
+// 2배속으로 재생
+action_mgr->setSpeed(2);
+```
+
 ###CCDestroy
 CCDestroy는 대상 오브젝트를 파괴하는 액션입니다.
 
