@@ -112,6 +112,7 @@ CCAnimateWithBlending은 스프라이트 애니메이션에 블렌딩을 적용�
 
 ```C++
 ccBlendFunc blendFunc = {GL_SRC_ALPHA, GL_ONE};
+
 action = CCAnimate::create(
     animation, blendFunc );
 ```
