@@ -107,6 +107,15 @@ director->setActionManager(action_mgr);
 action_mgr->setSpeed(2);
 ```
 
+###CCAnimateWithBlending
+CCAnimateWithBlending은 스프라이트 애니메이션에 블렌딩을 적용시킬 수 있도록 해주는 클래스입니다.
+
+```C++
+ccBlendFunc blendFunc = {GL_SRC_ALPHA, GL_ONE};
+action = CCAnimate::create(
+    animation, blendFunc );
+```
+
 ###CCDestroy
 CCDestroy는 대상 오브젝트를 파괴하는 액션입니다.
 
